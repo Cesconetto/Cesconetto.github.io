@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<TITLE> Cadastro</TITLE>
+	<link rel="shortcut icon" href="img/pandinha.ico">
+	<link rel="stylesheet" href="cadastro.css">
+	<script src=script.js></script>
+</head>
+<body id="corpo">
+	<header>
+		<h1>Cadastro de usuario</h1>
+	</header>
+	<nav>
+		<a href="index.html">Pagina Inicial</a> |
+		<a href="cadastro.html">Cadastro</a>
+	</nav>
+	<br>
+	<section id="secao">
+		<form action="javascript:validaForm()" name="formCadastro" method="post">
+			<fieldset id="texto"> <legend>Informacoes pessoais:</legend>
+				Nome: <br>
+				<input type="text" name="nome"> 
+				<br>
+				Sobrenome: <br>
+				<input type="text" name="sobrenome">
+				<br>
+				Email: <br>
+				<input type="text" name="email" maxlenght="50">
+				<br>
+				Idade: <br>
+				<input type="text" name="idade" size="2" maxlengh="3"> anos
+				<br><br>
+				Sexo: <br>
+				<input type="radio" name="sexo" value="masculino" checked>Masculino 
+				<br>
+				<input type="radio" name="sexo" value="feminino">Feminino
+				<br><br>
+				Habilidades profissionais : <br>
+				<input type="checkbox" name="programar"> Sabe programar <br>
+				<input type="checkbox" name="modelar"> Sabe modelar <br>
+				<input type="checkbox" name="gambiarra"> Sabe fazer gambiarras <br>
+			</fieldset>
+			<fieldset id="texto2"> <legend>Informacoes de login</legend>
+				Login: <br>
+				<input type="text" name="login">
+				<br>
+				Senha: <br>
+				<input type="password" name="senha">
+				<br>
+			</fieldset>
+			<fieldset id="texto3"> <legend>Endereco:</legend>
+				CEP: <br>
+				<input type="text" name="cep1" size="5" maxlengh="5">
+				<input type="text" name="cep2" size="3" maxlengh="3">
+				<br>
+				Rua: <br>
+				<input type="text" name="rua">
+				<br>
+				Numero: <br>
+				<input type="text" name="num">
+				<br>
+				Complemento: <br>
+				<input type="text" name="num">
+				<br>
+			</fieldset>
+			<br>
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Cancelar">
+		</form>
+		<fieldset class="conf" id="texto4"> <legend>Configurações</legend>
+			<br>
+			Tamanho da fonte: <br>
+			<input type="range" id="rani" value="16" min="10" max="20" onchange="fonte(this.value)">
+			<span id="tamFonte">16</span>
+			<br><br>
+			Cor da fonte:
+			<input type="color" id="cor" oninput="corfonte(this.value)"><br>
+			<br><br>
+			Cor de fundo:
+			<input type="color" id="cor" value="white" oninput="corfundo(this.value)"><br>
+		</fieldset>
+	</section>
+</body>
+</html>

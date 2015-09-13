@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<meta charset="UTF-08">
+	<TITLE>Zoo Feliz</TITLE>
+	<link rel="shortcut icon" href="img/pandinha.ico">
+	<link rel="stylesheet" href="exercicios.css">
+	<script src=script.js></script>
+</HEAD>
+<BODY onload="invisivel()">
+<header>
+	<h1>Zoo Feliz</h1>
+</header>
+<nav>
+	<a href="index.html">Pagina Inicial</a> |
+	<a href="cadastro.html">Cadastro</a>
+</nav>
+<br>
+<section>
+	<TABLE WIDTH=40% >
+		<caption> Tabela de Imagens </caption>
+ 		<TR>
+ 			<TH WIDTH=22%> Imagem </TH>
+ 			<TH> Nome </TH>
+ 			<TH> Link </TH>
+ 			<TH> Tamanho </TH>
+ 		</TR>
+ 		<TR>
+ 			<TD> <center> <img src="img/panda.jpg" alt="Panda" width="80" height="50"/> </center> </TD>
+ 			<TD> Panda </TD>
+ 			<TD> <a href="panda.html"> Clique aqui para visualizar a imagem </a> </TD>
+ 			<TD> 98,7KB </TD>
+ 		</TR>
+ 		<TR>
+ 			<TD> <center> <img src="img/redpanda.jpg" alt="Panda Vermelho" width="80" height="50"/> </center> </TD>
+ 			<TD> Panda Vermelho </TD>
+ 			<TD> <a href="redpanda.html"> Clique aqui para visualizar a imagem </a> </TD>
+ 			<TD> 321KB </TD>
+ 		</TR>
+ 		<TR>
+ 			<TD> <center> <img src="img/jaguatirica.jpg" alt="Jaguatirica" width="80" height="50"/> </center> </TD>
+ 			<TD> Jaguatirica </TD>
+ 			<TD> <a href="jaguatirica.html"> Clique aqui para visualizar a imagem </a> </TD>
+ 			<TD> 123KB </TD>
+ 		</TR>
+ 		<TR>
+ 			<TD COLSPAN=4>Numero total de imagens = 3</TD>
+ 		</TR>
+	</TABLE>
+	<br>
+	<form action="" method="post">
+		<fieldset>
+			<legend>Cadastro de imagem</legend>
+			Nome do arquivo: <br>
+			<input type="text" name="filename">
+			<br><br>
+			Endereco do arquivo: <br>
+			<input type="text" name="filepath">
+			<br><br>
+			Formato do arquivo: <br>
+			<select name="formatoArquivo">
+				<option value="m">Selecione</option>
+				<option value="JPEG">JPEG</option>
+				<option value="PNG">PNG</option>
+				<option value="GIF">GIF</option>
+			</select><br><br>
+			Tipo da imagem: <br>
+			<select id="tipoImagem" name="tipoImagem" onchange="funcao()"> 
+				<option value="selecione">Selecione</option>
+				<option value="foto">Foto</option>
+				<option value="paisagem">Paisagem</option>
+				<option value="desenho">Desenho</option>
+				<option value="gif">GIF</option>
+			</select> <br>
+			<div id="divPaisagem"> 
+				<br>
+				Qual a paisagem? <br>
+				<textarea rows="5" cols="40"></textarea> <br><br>
+			</div>
+			<div id="divFoto">
+				<br>
+				Existem pessoas na foto? <br>
+				<textarea rows="5" cols="40"></textarea> <br><br>
+			</div>
+			<div id="divGif">
+				<br>
+				O Gif é animado? <br>
+				<textarea rows="5" cols="40"></textarea> <br><br>
+			</div>
+			<div id="divDesenho">
+				<br>
+				Descriva o desenho: <br>
+				<textarea rows="5" cols="40"></textarea> <br><br>
+			</div>
+			<br>
+			Descricao: <br>
+			<textarea rows="5" cols="40" id="descricao"></textarea>
+			<br>
+		</fieldset>
+		<br>
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Cancelar">
+	</form>
+</section>
+</BODY>
+</HTML>

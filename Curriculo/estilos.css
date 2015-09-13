@@ -1,0 +1,185 @@
+
+/*.site{
+	/* Definimos a largura da página */
+    /* width:1000px;
+    /* Definirmos a altura da página*/
+    /* height:700px;
+    /* Aqui definiremos a posição que a página ocupará na tela, nesse caso estamos definindo que fique centralizado na tela*/
+    /* top : posição de cima
+    margin-top:0;
+    /* left: posição de esquerda*/
+    /* margin-left:auto;
+    /* bottom : posição de baixo */
+    /* margin-bottom:0;
+    /* right : posição de direita */
+    /* margin-right:auto;
+    /* Aqui definiremos a cor de fundo da página */
+    /* background-color:#666;
+}
+*/
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+html{
+  font-family: "Lucida Sans Unicode", monospace;
+}
+
+
+body{
+	width: 100%;
+	height: 100%;
+	/*border: solid;*/
+	margin: 0;
+    background-color: #009688;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 15%;
+    background-color: #009688;
+    border: solid;
+    text-align: center;
+    color: white;
+    border-color: #009688;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+nav{
+    display: inline-block;
+    position: relative;
+    width: 15%;
+    height: 85%;
+    float: left;
+    border: solid;
+    text-align: center;
+    background-color: #009688;
+    color: white;
+    border-color: #009688;
+}
+
+li {
+    display: inline;
+}
+
+section{
+    width: 100%;
+    height: 75%;
+    background-color: transparent;
+    border: solid;
+    border-color: #009688;
+}
+
+.bar_left{
+    display: inline-block;
+    position: relative;
+    width: 15%;
+    height: 100%;
+    float: left;
+    border: solid;
+
+}
+
+.miolo{
+    display: inline-block;
+    position: relative;
+    width: 70%;
+    height: 100%;
+    float: center;
+    border: solid;
+    border-color: white;
+    background-color: #A9F5F2;
+
+}
+
+.bar_right{
+    display: inline-block;
+    position: relative;
+    width: 15%;
+    height: 100%;
+    float: right;
+    border: solid;
+    border-color: #009688;
+}
+
+
+footer{
+    width: 85%;
+    height: 10%;
+    background-color: #009688;
+    color: white;
+    /*border: solid;*/
+}
+
+
+table, th, td, tr {
+    border-collapse: collapse;
+}
+
+th{
+    text-align: center;
+    margin-top: 0;
+}
+
+td{
+    text-align: left;
+}
+
+
+.tema{
+    display: inline-block;
+    position: relative;
+    background-color: #009688;
+    color: #fff;
+    height: 85%;
+    text-align: center;
+    width: 70%;
+    color: white;
+}
+
+
+.titu{
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+    float: left;
+    border: transparent;
+    width: 20%;
+    text-align: center;
+    border: auto;
+
+}
+ 
+.descri{
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    border: transparent;
+
+}
+
+p, h3{
+    margin-left: 1cm;
+}
+
+img{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+a:hover{
+    color: black;
+}
